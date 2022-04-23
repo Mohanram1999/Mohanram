@@ -1,0 +1,1392 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Alegreya+SC&family=Allerta+Stencil&family=Dongle:wght@700&family=Moo+Lah+Lah&family=Nosifer&display=swap');
+
+body{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: whitesmoke;
+    color: #262626;
+    transition: 2s;
+    overflow-y: hidden;
+    overflow-x: visible;
+}
+@media screen and (max-width:500px) {
+    body{
+        overflow-x:hidden;
+        overflow-y: scroll;
+    }
+}
+
+/*      Scrollbar       */
+
+::-webkit-scrollbar{
+    height: 10px;
+    width: 10px;
+    color: goldenrod;
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: goldenrod;
+}
+
+/*      Scrollbar       */
+
+/*      Navigation      */
+
+.navigation{
+    top: 0;
+    left: 0;
+    right: 0;
+    width:100%;
+    height: 2cm;
+    position: fixed;
+    text-align: center;
+    background-color: whitesmoke;
+    transition: 2s;
+}
+
+/*      Modes       */
+
+.modes{
+    padding:35px;
+    background-color: #262626;
+    border-bottom-left-radius: 100%;
+    float: right;
+    font-size: 35px;
+    cursor: pointer;
+    box-shadow: 0 0 100px #262626;
+}
+.modes .dark{
+    color: silver;
+}
+.modes .dark:hover{
+    text-shadow: 0 0 5px silver;
+}
+.modes .light{
+    display: none;
+    color:darkorange;
+}
+.modes .light:hover{
+    text-shadow: 0 0 5px orangered;
+}
+
+
+/*      Modes       */
+
+/*      Navbar      */
+nav #text{
+    display: block;
+}
+nav #text li{
+    display: inline;
+    list-style: none;
+}
+nav #text li a{
+    color: seagreen;
+    text-decoration: none;
+    padding-left: 2cm;
+    font-weight: bold;
+    font-family: cursive;
+}
+nav ul li #nav1{
+    color: unset;
+}
+nav ul li #nav2{
+    color: unset;
+}
+nav #text li a:hover{
+    font-size:larger;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+nav #icon{
+    display: none;
+}
+nav #icon li{
+    display: inline;
+    list-style: none;
+}
+nav #icon li a{
+    color: seagreen;
+    text-decoration: none;
+    padding: 0 15px;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: large;
+}
+nav ul li #nav1{
+    color: unset;
+}
+nav ul li #nav2{
+    color: unset;
+}
+nav #icon li a:hover{
+    font-size: x-large;
+    text-shadow: 0 0 5px;
+}
+
+@media screen and (max-width:600px) {
+    .modes{
+        font-size: 30px;
+    }
+    nav #text{
+        display: none;
+    }
+    nav #icon{
+        display: block;
+        position: sticky;
+    }
+}
+
+/*      Navbar      */
+
+/*      Navigation      */
+
+/*      Scrollpage and sea      */
+
+.scrollpage{
+    width: 100%;
+    height: 80vh;
+    margin-top: 2cm;
+}
+.scrollpage footer{
+    display: block;
+    margin-top:46vh;
+}
+.scrollpage footer .ocean{
+    position: absolute;
+    width: 800%;
+}
+.scrollpage .oceanship{
+    margin-left: 25%;
+    mix-blend-mode:hard-light;
+    transform-style: preserve-3d;
+    width: 5cm;
+    position: fixed;
+    transition: 2s;
+    transform: perspective(800px);
+}
+.scrollpage footer .ocean #oceanimg{
+    position: absolute;
+    width: 100%;
+    height: 5cm;
+    border-radius: 10px;
+    transition: 1s;
+    filter: brightness(100%);
+}
+.scrollpage footer .oceanship img{
+    width: 5cm;
+    height: 5cm;
+    cursor: pointer;
+}
+.scrollpage footer .oceanship:hover{
+    mix-blend-mode: difference;
+}
+
+@media screen and (max-width:600px) {
+    .scrollpage{
+        width: 100%;
+        height: 50vh;
+    }
+    .scrollpage footer{
+        display: none;
+    }
+}
+
+/*      Scrollpage and sea      */
+
+
+/*      Homepage        */
+
+.homepagecon{
+    position:absolute;
+    margin-top: 1cm;
+    width:100%;
+    padding-top: 0;
+}
+.homepagecon h1{
+    padding-top:0 ;
+    text-align: center;
+    font-size: large;
+    font-family:"Allerta Stencil";
+}
+.homepagecon h1 span{
+    font-variant: small-caps;
+    font-size: 115px;
+    font-family: 'Moo Lah Lah',cursive;
+    transform: translate(-50%,-50%);
+    background: #262626 -webkit-gradient(linear,left top,right top,from(#262626),to(#262626),color-stop(0.5,#fff)) 0 0 no-repeat;
+    -webkit-background-size:90px;
+    background-size: 90px;
+    color: rgba(180, 157, 26, 0.801);
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: animate 5s infinite;
+}
+@keyframes animate {
+    0%,10%{
+        background-position: 1000px;
+    }
+    20%{
+        background-position: top left;
+    }
+    90%{
+        background-position: top right;
+    }
+    100%{
+        background-position: -1000px;
+    }
+}
+.homepagecon h2{
+    text-align: center;
+    font-size: x-large;
+}
+.homepagecon h3{
+    text-align: center;
+    font-variant: small-caps;
+    font-family: cursive;
+    font-size: small;
+}
+@media screen and (max-width:600px) {
+    .homepagecon{
+        float: none;
+        position: unset;
+        height: 45vh;
+        width: 100%;
+        padding-top: 20px
+    }
+    .homepagecon h1{
+        font-size: small;
+        padding-top: 1cm;
+    }
+    .homepagecon h1 span{
+        font-size: 50px;
+    }
+    .homepagecon h3{
+        font-size: x-small;
+    }
+}
+
+/*      sea and ship     */
+.sea{
+    display: none;
+}
+@media screen and (max-width:600px) {
+    .sea{
+        margin-top: 30px;
+        display: block;
+        width: 100%;
+    }
+    .sea #seaimg{
+        position: absolute;
+        width: 96%;
+        height: 5cm;
+        border-radius: 10px;
+        transition: 1s;
+        filter: brightness(100%);
+    }
+    .ship{
+        margin-left: 5%;
+        mix-blend-mode:hard-light;
+        transform-style: preserve-3d;
+    }
+    .ship img{
+        width: 5cm;
+        height: 5cm;
+    }
+    .ship:hover{
+        mix-blend-mode: difference;
+    }
+}
+
+/*      sea and ship     */
+
+
+
+/*      Homepage        */
+
+/*      StorySelector       */
+
+.storyselect{
+    margin-left: 100%;
+    position: absolute;
+    width:100%;
+    background-image: url("images/mapisland.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+.storyselect h1{
+    padding-top: 0;
+    text-align: center;
+    font-variant: small-caps;
+    font-family: fantasy;
+    text-decoration: underline;
+    font-size: x-large;
+}
+/*          StorySelector          */
+.storyselector{
+    position: absolute;
+    margin-top: 20px;
+    float: left;
+    width: 50%;
+    height: 34vh;
+    margin-left: 20px;
+    transform-style: preserve-3d;
+    animation: rotate 10s infinite linear;
+}
+.storyselector:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+@keyframes rotate {
+    from{
+        transform:rotateX(360deg);
+    }
+    to{
+        transform: rotateX(0deg);
+    }
+}
+.select1{
+    background-image: url("images/origin/baby.gif");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    margin-top: 1cm;
+    margin-left: 25%;
+    width: 60%;
+    height: 60%;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transform:rotateX(0deg) translateZ(100px);
+    border-radius: 10px;
+}
+.select1:hover{
+    border: 2px solid;
+    box-shadow: 0 0 5px;
+}
+.select1 p{
+    color: #262626;
+    text-shadow: 0 3px 3px goldenrod;
+    font-size: large;
+    font-weight: bold;
+    padding-top: 20px;
+    text-align: center;
+    font-family: fantasy;
+}
+.select2{
+    background-image: url("images/childhood/childhood.gif");
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    margin-top: 1cm;
+    margin-left: 25%;
+    width: 60%;
+    height: 60%;
+    background-color: green;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transform:rotateX(90deg) translateZ(100px);
+    border-radius: 10px;
+}
+.select2:hover{
+    border: 2px solid;
+    box-shadow: 0 0 5px;
+}
+.select2 p{
+    color: #262626;
+    text-shadow: 0 3px 3px goldenrod;
+    font-size: large;
+    font-weight: bold;
+    padding-top: 20px;
+    text-align: center;
+    font-family: fantasy;
+}
+.select3{
+    background-image: url("images/school/school2.webp");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    margin-top: 1cm;
+    margin-left: 25%;
+    width: 60%;
+    height: 60%;
+    background-color: red;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transform:rotateX(180deg) translateZ(100px);
+    border-radius: 10px;
+}
+.select3:hover{
+    border: 2px solid;
+    box-shadow: 0 0 5px;
+}
+.select3 p{
+    color: #262626;
+    text-shadow: 0 3px 3px goldenrod;
+    font-size: large;
+    font-weight: bold;
+    padding-top: 20px;
+    text-align: center;
+    font-family: fantasy;
+}
+.select4{
+    background-image: url("images/college/college1.webp");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    margin-top: 1cm;
+    margin-left: 25%;
+    width: 60%;
+    height: 60%;
+    background-color: sienna;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transform:rotateX(270deg) translateZ(100px);
+    border-radius: 10px;
+}
+.select4:hover{
+    border: 2px solid;
+    box-shadow: 0 0 5px;
+}
+.select4 p{
+    color: #262626;
+    text-shadow: 0 3px 3px goldenrod;
+    font-size: large;
+    font-weight: bold;
+    padding-top: 20px;
+    text-align: center;
+    font-family: fantasy;
+}
+/*          StorySelector          */
+.storyselect .explore{
+    float: right;
+    width: 45%;
+    text-align: center;
+    height: 60vh;
+}
+.storyselect .explore h2{
+    margin-top: 2.5cm;
+    width: 60%;
+    font-size: small;
+    font-family: cursive;
+}
+.storyselect .explore h3{
+    font-size: small;
+    margin-right: 60%;
+    margin-left: 20%;
+    border: 2px solid;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "Alegreya SC";
+}
+.storyselect .explore h3 a{
+    text-decoration: none;
+}
+.storyselect .explore h3:hover{
+    transition: 1s;
+    background-color:deepskyblue;
+    color: black;
+}
+@media screen and (max-width:600px) {
+    .storyselect{
+        position: unset;
+        margin-left: 0;
+        width: 100%;
+        height: 100vh;
+        background-image: url("images/mapisland.png");
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        border-right: none;
+    }
+    .storyselect h1{
+        padding-top: 20vh;
+    }
+    .storyselector{
+        height: 50vh;
+    }
+    .select1{
+        margin-left: 10%;
+    }
+    .select2{
+        margin-left: 10%;
+    }
+    .select3{
+        margin-left: 10%;
+    }
+    .select4{
+        margin-left: 10%;
+    }
+    .storyselect .explore{
+        margin-right: 0px;
+        height: 40vh;
+        background-image: unset;
+    }
+    .storyselect .explore h2{
+        margin-top:0px;
+        width: 100%;
+    }
+    .storyselect .explore h3{
+        margin: 0 20%;
+    }
+}
+
+
+/*      StorySelector       */
+
+/*      Origin      */
+
+.origin{
+    margin-left: 200%;
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    align-items: center;
+}
+.origin h1{
+    text-align: center;
+    font-family: "Alegreya SC";
+    font-variant: small-caps;
+    font-size: x-large;
+}
+.born{
+    float: left;
+    margin-left: 10%;
+    width: 40%;
+    transition: 2s;
+    transform: perspective(800px) rotateY(0deg);
+}
+.born img{
+    cursor: pointer;
+    margin-top: 5%;
+    float: right;
+    width: 5cm;
+    height: 5cm;
+    border-radius: 100%;
+    border: 5px solid;
+    border-bottom: 15px solid;
+    animation: float 2s ease-in-out infinite;
+}
+@keyframes float {
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(-15px);}
+    100%{transform: translateY(-0px);}
+}
+.born img:hover{
+    filter:contrast(20%);
+}
+.born p{
+    font-size: large;
+    padding: 0;
+    float: left;
+    text-align: center;
+    font-family: "Akaya kanadaka";
+    font-variant: small-caps;
+    font-weight: bold;
+    width: 49%;  
+}
+.place{
+    transition: 2s;
+    float: right;
+    margin-right: 10%;
+    width: 40%;
+    transform: perspective(800px) rotateY(0deg);
+}
+.place img{
+    cursor: pointer;
+    margin-top: 5%;
+    float: left;
+    width: 5cm;
+    height: 5cm;
+    border-radius: 100%;
+    border: 5px solid;
+    border-bottom: 15px solid;
+    border-top: 5px solid;
+    animation: float 2s ease-in-out infinite;
+}
+.place img:hover{
+    filter:contrast(20%);
+}
+.place p{
+    padding: 0;
+    float: right;
+    text-align: center;
+    font-family: "Akaya kanadaka";
+    font-size: large;
+    font-variant: small-caps;
+    font-weight: bold;
+    width: 49%;  
+}
+@media screen and (max-width:600px){
+    .origin{
+        position: unset;
+        margin-left: 0;
+        height: 190vh;
+    }
+    .origin h1{
+        padding-top: 3cm;
+    }
+    .born{
+        border: 2px solid;
+        border-left-width:10px;
+        float: none;
+        width: 98%;
+        margin-left: 0;
+        padding: 10px 0;
+        transform: none;
+        transition: none;
+    }
+    .born img{
+        float: none;
+        width: 3cm;
+        height: 3cm;
+    }
+    .born p{
+        padding: 10px;
+        float: none;
+        width: 90%;
+    }
+    .place{
+        border: 2px solid;
+        border-right-width: 10px;
+        padding: 10px 0;
+        float: none;
+        width: 98%;
+        margin-right: 0;
+        transform: none;
+        transition: none;
+    }
+    .place img{
+        float: none;
+        width: 3cm;
+        height: 3cm;
+    }
+    .place p{
+        padding: 10px;
+        float: none;
+        width: 90%;
+    }
+
+}
+
+/*      Origin      */
+
+/*      Childhood       */
+.childhood{
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    align-items: center;
+    margin-left: 300%;
+    border-left: 10px solid;
+    border-top: none;
+}
+.childhood h1{
+    text-align: center;
+    font-family: 'Alegreya SC';
+    font-variant: small-caps;
+    font-size: x-large;
+}
+.normal{
+    float: left;
+    width: 40%;
+    margin-left: 10%;
+    transform: perspective(800px) rotateY(0deg);
+    transition: 2s;
+}
+.normal img{
+    cursor: pointer;
+    margin-top: 5%;
+    float: right;
+    width: 5cm;
+    height: 5cm;
+    border-radius: 100%;
+    border: 5px solid;
+    border-bottom: 15px solid;
+    animation: float 2s ease-in-out infinite;
+}
+.normal img:hover{
+    filter:contrast(20%);
+}
+.normal p{
+    padding: 0;
+    float: left;
+    text-align: center;
+    font-family: "Akaya kanadaka";
+    width: 49%;  
+    font-weight: bold;
+}
+
+.childlife{
+    transition: 2s;
+    float: right;
+    margin-right: 10%;
+    width: 40%;
+    transform: perspective(800px) rotateY(0deg);
+}
+.childlife img{
+    cursor: pointer;
+    margin-top: 5%;
+    float: left;
+    width: 5cm;
+    height: 5cm;
+    border-radius: 100%;
+    border: 5px solid;
+    border-bottom: 15px solid;
+    border-top: 5px solid;
+    animation: float 2s ease-in-out infinite;
+}
+.childlife img:hover{
+    filter:contrast(20%);
+}
+.childlife p{
+    padding: 0;
+    float: right;
+    text-align: center;
+    font-family: "Akaya kanadaka";
+    font-weight: bold;
+    width: 49%;  
+}
+
+/*      Childhood       */
+@media screen and (max-width:600px){
+    .childhood{
+        position: unset;
+        margin-left: 0;
+        border-left: none;
+        height:190vh;
+        border-top: 10px solid;
+    }
+    .childhood h1{
+        padding-top: 2cm;
+    }
+    .normal{
+        border: 2px solid;
+        border-left-width:10px;
+        float: none;
+        width: 98%;
+        margin-left: 0;
+        padding: 10px 0;
+    }
+    .normal img{
+        float: none;
+        width: 3cm;
+        height: 3cm;
+    }
+    .normal p{
+        padding: 10px;
+        float: none;
+        width: 90%;
+    }
+    .childlife{
+        border: 2px solid;
+        border-right-width: 10px;
+        padding: 10px 0;
+        float: none;
+        width: 98%;
+        margin-right: 0;
+        transform: none;
+        transition: none;
+    }
+    .childlife img{
+        float: none;
+        width: 3cm;
+        height: 3cm;
+    }
+    .childlife p{
+        padding: 10px;
+        float: none;
+        width: 90%;
+    }
+}
+
+/*      school      */
+.schooling{
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    align-items: center;
+    margin-left: 400%;
+    border-left: 10px solid;
+    border-top: none;
+}
+.schooling h1{
+    text-align: center;
+    font-family: "Alegreya SC";
+    font-variant: small-caps;
+    font-size: x-large;
+}
+.maryschool{
+    float: left;
+    width: 40%;
+    margin-left: 10%;
+    transform: perspective(800px) rotateY(0deg);
+    transition: 2s;
+}
+.maryschool img{
+    cursor: pointer;
+    margin-top: 5%;
+    float: right;
+    width: 5cm;
+    height: 5cm;
+    border-radius: 100%;
+    border: 5px solid;
+    border-bottom: 15px solid;
+    animation: float 2s ease-in-out infinite;
+}
+.maryschool img:hover{
+    filter:contrast(20%);
+}
+.maryschool p{
+    padding: 0;
+    float: left;
+    text-align: center;
+    font-family: "Akaya kanadaka";
+    font-weight: bold;
+    width: 49%;  
+}
+
+.sishyaschool{
+    transition: 2s;
+    float: right;
+    margin-right: 10%;
+    width: 40%;
+    transform: perspective(800px) rotateY(0deg);
+}
+.sishyaschool img{
+    cursor: pointer;
+    margin-top: 5%;
+    float: left;
+    width: 5cm;
+    height: 5cm;
+    border-radius: 100%;
+    border: 5px solid;
+    border-bottom: 15px solid;
+    border-top: 5px solid;
+    animation: float 2s ease-in-out infinite;
+}
+.sishyaschool img:hover{
+    filter:contrast(20%);
+}
+.sishyaschool p{
+    padding: 0;
+    float: right;
+    text-align: center;
+    font-family: "Akaya kanadaka";
+    font-weight: bold;
+    width: 49%;  
+}
+
+/*      school       */
+@media screen and (max-width:600px){
+    .schooling{
+        position: unset;
+        margin-left: 0;
+        border-left: none;
+        border-top: 10px solid;
+        height: 190vh;
+    }
+    .schooling h1{
+        padding-top: 2cm;
+    }
+    .maryschool{
+        border: 2px solid;
+        border-left-width:10px;
+        float: none;
+        width: 98%;
+        margin-left: 0;
+        padding: 10px 0;
+    }
+    .maryschool img{
+        float: none;
+        width: 3cm;
+        height: 3cm;
+    }
+    .maryschool p{
+        padding: 10px;
+        float: none;
+        width: 90%;
+    }
+    .sishyaschool{
+        border: 2px solid;
+        border-right-width: 10px;
+        padding: 10px 0;
+        float: none;
+        width: 98%;
+        margin-right: 0;
+        transform: none;
+        transition: none;
+    }
+    .sishyaschool img{
+        float: none;
+        width: 3cm;
+        height: 3cm;
+    }
+    .sishyaschool p{
+        padding: 10px;
+        float: none;
+        width: 90%;
+    }
+}
+
+/*      school       */
+
+/*      College     */
+
+.college{
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    align-items: center;
+    margin-left: 500%;
+    border-left: 10px solid;
+    border-top: none;
+
+}
+.college h1{
+    text-align: center;
+    font-family: "Alegreya SC";
+    font-variant: small-caps;
+    font-size: x-large;
+}
+.startyear{
+    float: left;
+    width: 40%;
+    margin-left: 10%;
+    transform: perspective(800px) rotateY(0deg);
+    transition: 2s;
+}
+.startyear img{
+    cursor: pointer;
+    margin-top: 5%;
+    float: right;
+    width: 5cm;
+    height: 5cm;
+    border-radius: 100%;
+    border: 5px solid;
+    border-bottom: 15px solid;
+    animation: float 2s ease-in-out infinite;
+}
+.startyear img:hover{
+    filter:contrast(20%);
+}
+.startyear p{
+    padding: 0;
+    float: left;
+    text-align: center;
+    font-family: "Akaya kanadaka";
+    font-weight: bold;
+    width: 49%;  
+}
+
+.endyear{
+    transition: 2s;
+    float: right;
+    margin-right: 10%;
+    width: 40%;
+    transform: perspective(800px) rotateY(0deg);
+}
+.endyear img{
+    cursor: pointer;
+    margin-top: 5%;
+    float: left;
+    width: 5cm;
+    height: 5cm;
+    border-radius: 100%;
+    border: 5px solid;
+    border-bottom: 15px solid;
+    border-top: 5px solid;
+    animation: float 2s ease-in-out infinite;
+}
+.endyear img:hover{
+    filter:contrast(20%);
+}
+.endyear p{
+    padding: 0;
+    float: right;
+    text-align: center;
+    font-family: "Akaya kanadaka";
+    font-weight: bold;
+    width: 49%;  
+}
+
+
+
+@media screen and (max-width:600px){
+    .college{
+        position: unset;
+        margin-left: 0;
+        border-left: none;
+        border-top: 10px solid;
+        height: 200vh;
+        border-bottom: 10px solid;
+    }
+    .college h1{
+        padding-top: 2cm;
+    }
+    .startyear{
+        border: 2px solid;
+        border-left-width:10px;
+        float: none;
+        width: 98%;
+        margin-left: 0;
+        padding: 10px 0;
+    }
+    .startyear img{
+        float: none;
+        width: 3cm;
+        height: 3cm;
+    }
+    .startyear p{
+        padding: 10px;
+        float: none;
+        width: 90%;
+    }
+    .endyear{
+        border: 2px solid;
+        border-right-width: 10px;
+        padding: 10px 0;
+        float: none;
+        width: 98%;
+        margin-right: 0;
+        transform: none;
+        transition: none;
+    }
+    .endyear img{
+        float: none;
+        width: 3cm;
+        height: 3cm;
+    }
+    .endyear p{
+        padding: 10px;
+        float: none;
+        width: 90%;
+    }
+
+}
+
+/*      College     */
+
+/*      Education       */
+
+.education{
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    align-items: center;
+    margin-left: 600%;
+    border-top: none;
+    background-image: url("images/island2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x:right;
+    background-position-y: 20px;
+}
+.education h1{
+    text-align: center;
+    font-family: "Alegreya SC";
+    font-variant: small-caps;
+    font-size: x-large;
+}
+.degree{
+    margin-left: 10px;
+    text-align: center;
+    width: 50%;
+}
+.degree h1{
+    font-size: large;
+    font-family: "Akaya kanadaka";
+    font-variant: small-caps;
+}
+.skills{
+    width: 50%;
+    text-align: center;
+}
+.skills ul li{
+    list-style: none;
+    display: inline-flex;
+}
+.circle{
+    margin: 10px;
+    position: relative;
+    width: 3cm;
+    height:3cm;
+    border-bottom: 5px solid;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    cursor: pointer;
+}
+.circle p{
+    font-size: 10px;
+    font-weight: bolder;
+    font-variant: small-caps;
+    font-family:cursive;
+}
+.wave{
+    font-family: cursive;
+    background-color: #3f68c5;
+    position: absolute;
+    top: 40%;
+    height: 200%;
+    width: 200%;
+    left: -50%;
+    border-radius: 38%;
+    transform: rotate(360deg);
+    transition: all 5s ease;
+    animation: wave 50s linear infinite;
+}
+.wave1{
+    font-family: cursive;
+    background-color: #3f68c5;
+    position: absolute;
+    top: 25%;
+    height: 200%;
+    width: 200%;
+    left: -50%;
+    border-radius: 38%;
+    transform: rotate(360deg);
+    transition: all 5s ease;
+    animation: wave 50s linear infinite;
+}
+.wave2{
+    font-family: cursive;
+    background-color: #3f68c5;
+    position: absolute;
+    top: 50%;
+    height: 200%;
+    width: 200%;
+    left: -50%;
+    border-radius: 38%;
+    transform: rotate(360deg);
+    transition: all 5s ease;
+    animation: wave 50s linear infinite;
+}
+.wave3{
+    font-family: cursive;
+    background-color: #3f68c5;
+    position: absolute;
+    top: 60%;
+    height: 200%;
+    width: 200%;
+    left: -50%;
+    border-radius: 38%;
+    transform: rotate(360deg);
+    transition: all 5s ease;
+    animation: wave 50s linear infinite;
+}
+@keyframes wave {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(3600deg);}
+}
+.circle:hover .wave{
+    top: 0%;
+}
+.circle:hover .wave1{
+    top: 0%;
+}
+.circle:hover .wave2{
+    top: 0%;
+}
+.circle:hover .wave3{
+    top: 0%;
+}
+.project{
+    width:50%;
+    height: 2cm;
+}
+.project h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+    text-align: center;
+    font-variant: small-caps;
+}
+#slider{
+    position: relative;
+}
+.slide{
+    list-style: none;
+    text-align: center;
+    width: 90%;
+    border:2px;
+    border-style: solid;
+    border-radius: 20px;
+}
+#slider>li{
+    font-family: "Alegreya SC";
+    position: absolute;
+    text-shadow: 0 1px 2px;
+}
+@media screen and (max-width:600px) {
+    .education{
+        margin-top: 2cm;
+        position: unset;
+        margin-left: 0;
+        width: 100%;
+        height: 140vh;
+        background-image: url("images/island2.png");
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        border-right: none;
+        border-left: none;
+    }
+    .degree{
+        width: 95%;
+    }
+    .skills{
+        width: 95%;
+    }
+    .skills ul li{
+        display:inline;
+    }
+    .circle{
+        float: left;
+        width: 2.3cm;
+        height: 2.3cm;
+    }
+    .project{
+        position: absolute;
+        margin-top: 40vh;
+        width: 90%;
+        text-align: center;;
+    }
+    .slide{
+        width: 70%;
+    }
+}
+/*      Education       */
+
+/*      Contact     */
+
+.contact{
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    align-items: center;
+    margin-left: 700%;
+    border-top: none;
+    background-image: url("images/island4.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x:right;
+}
+.contact h1{
+    text-align: center;
+    font-family: "Alegreya SC";
+    font-variant: small-caps;
+    font-size: x-large;
+}
+#form{
+    float: left;
+    width: 50%;
+    margin-left: 1cm;
+    height: 40vh;
+}
+input[type=text],textarea,[type=email]{
+    margin: 10px;
+    background-color: unset;
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid;
+    border-color:green;
+}
+input[type=text]::placeholder,textarea::placeholder,[type=email]::placeholder{
+    font-family: "Akaya kanadaka";
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: medium;
+}
+input[type=submit]{
+    float: right;
+    background-color: unset;
+    color: green;
+    border:none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-variant: small-caps;
+    font-weight: bolder;
+    font-family: "Nosifer";
+}
+input[type=submit]:hover{
+    color: blue;
+}
+
+.phone{
+    float: right;
+    width: 45%;
+    text-align: left;
+}
+.phone p{
+    margin: 50px 20px;
+    font-variant: small-caps;
+    font-size: large;
+    font-weight: bolder;
+    font-family: "Akaya kanadaka";
+}
+.phone p br{
+    display: block;
+}
+.phone p a{
+    font-size: xx-large;
+    margin:20px;
+    color: green;
+}
+.phone p a:hover{
+    color: blue;
+}
+@media screen and (max-width:600px) {
+    .contact{
+        margin-top: 2cm;
+        position: unset;
+        margin-left: 0;
+        width: 100%;
+        height: 120vh;
+        background-image: url("images/island4.png");
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        border-right: none;
+    }
+    #form{
+        width: 60%;
+        float: none;
+    }
+    .phone{
+        float: none;
+        width: 95%;
+    }
+    .phone p{
+        margin: 0;
+        text-align: center;
+    }
+    .phone p br{
+        display: none;
+    }
+    .phone p a{
+        margin: 0;
+    }
+}
+    /*      Contact     */
+
+
+
+
