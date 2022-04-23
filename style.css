@@ -155,7 +155,7 @@ nav #icon li a:hover{
 }
 .scrollpage footer{
     display: block;
-    margin-top:46vh;
+    margin-top:47vh;
 }
 .scrollpage footer .ocean{
     position: absolute;
@@ -545,7 +545,7 @@ nav #icon li a:hover{
     margin-left: 200%;
     position: absolute;
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     text-align: center;
     align-items: center;
 }
@@ -566,7 +566,7 @@ nav #icon li a:hover{
     cursor: pointer;
     margin-top: 5%;
     float: right;
-    width: 5cm;
+    width: 40%;
     height: 5cm;
     border-radius: 100%;
     border: 5px solid;
@@ -602,7 +602,7 @@ nav #icon li a:hover{
     cursor: pointer;
     margin-top: 5%;
     float: left;
-    width: 5cm;
+    width: 40%;
     height: 5cm;
     border-radius: 100%;
     border: 5px solid;
@@ -627,7 +627,7 @@ nav #icon li a:hover{
     .origin{
         position: unset;
         margin-left: 0;
-        height: 190vh;
+        height: max-content;
     }
     .origin h1{
         padding-top: 3cm;
@@ -681,7 +681,7 @@ nav #icon li a:hover{
 .childhood{
     position: absolute;
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     text-align: center;
     align-items: center;
     margin-left: 300%;
@@ -705,7 +705,7 @@ nav #icon li a:hover{
     cursor: pointer;
     margin-top: 5%;
     float: right;
-    width: 5cm;
+    width: 40%;
     height: 5cm;
     border-radius: 100%;
     border: 5px solid;
@@ -735,7 +735,7 @@ nav #icon li a:hover{
     cursor: pointer;
     margin-top: 5%;
     float: left;
-    width: 5cm;
+    width: 40%;
     height: 5cm;
     border-radius: 100%;
     border: 5px solid;
@@ -761,8 +761,7 @@ nav #icon li a:hover{
         position: unset;
         margin-left: 0;
         border-left: none;
-        height:190vh;
-        border-top: 10px solid;
+        height:max-content;
     }
     .childhood h1{
         padding-top: 2cm;
@@ -811,7 +810,7 @@ nav #icon li a:hover{
 .schooling{
     position: absolute;
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     text-align: center;
     align-items: center;
     margin-left: 400%;
@@ -835,7 +834,7 @@ nav #icon li a:hover{
     cursor: pointer;
     margin-top: 5%;
     float: right;
-    width: 5cm;
+    width: 40%;
     height: 5cm;
     border-radius: 100%;
     border: 5px solid;
@@ -865,7 +864,7 @@ nav #icon li a:hover{
     cursor: pointer;
     margin-top: 5%;
     float: left;
-    width: 5cm;
+    width: 40%;
     height: 5cm;
     border-radius: 100%;
     border: 5px solid;
@@ -891,8 +890,7 @@ nav #icon li a:hover{
         position: unset;
         margin-left: 0;
         border-left: none;
-        border-top: 10px solid;
-        height: 190vh;
+        height: max-content;
     }
     .schooling h1{
         padding-top: 2cm;
@@ -944,7 +942,7 @@ nav #icon li a:hover{
 .college{
     position: absolute;
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     text-align: center;
     align-items: center;
     margin-left: 500%;
@@ -1026,8 +1024,7 @@ nav #icon li a:hover{
         position: unset;
         margin-left: 0;
         border-left: none;
-        border-top: 10px solid;
-        height: 200vh;
+        height: max-content;
         border-bottom: 10px solid;
     }
     .college h1{
@@ -1081,7 +1078,7 @@ nav #icon li a:hover{
 .education{
     position: absolute;
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     text-align: center;
     align-items: center;
     margin-left: 600%;
@@ -1235,7 +1232,7 @@ nav #icon li a:hover{
 }
 @media screen and (max-width:600px) {
     .education{
-        margin-top: 2cm;
+        margin-top: 3cm;
         position: unset;
         margin-left: 0;
         width: 100%;
@@ -1278,7 +1275,7 @@ nav #icon li a:hover{
 .contact{
     position: absolute;
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     text-align: center;
     align-items: center;
     margin-left: 700%;
@@ -1355,7 +1352,7 @@ input[type=submit]:hover{
 }
 @media screen and (max-width:600px) {
     .contact{
-        margin-top: 2cm;
+        margin-top: 3cm;
         position: unset;
         margin-left: 0;
         width: 100%;
