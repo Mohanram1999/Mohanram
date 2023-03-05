@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+        <script src="jquery code/js/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <!--        scrollpage        -->
+        <br>
+        <section class="scrollpage" id="scrollpage">
+
+            <!--        Homepage        -->
+            
+            <section class="homepagecon" id="home">
+                <h1>My name is<br>
+                <span id="myname">Mohanram</span>
+                </h1>
+                <h3>&</h3>
+                <h2>I am an Embedded Developer</h2>
+            </section>
+
+            <!--        Education       -->
+
+            <section class="education" id="education">
+                <h1>Education</h1>
+                <div class="degree">
+                    <h1><B>BE</B> - Electrical and Electronics Engineering</h1>
+                </div>
+                <div class="skills">
+                    <ul>
+                        <li>
+                            <div class="circle">
+                                <p class="C/C++">C/C++</p>
+                                <div class="wave1">80%</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="circle">
+                                <p class="python">Python</p>
+                                <div class="wave">60%</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="circle">
+                                <p class="html">HTML & CSS</p>
+                                <div class="wave1">80%</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="circle">
+                                <p class="JS">JavaScript</p>
+                                <div class="wave2">40%</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="circle">
+                                <p class="Matlab">Matlab & <br>Proteus</p>
+                                <div class="wave3">40%</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <div class="project">
+                    <h1>Project</h1>
+                    <ul id="slider">
+                        <li class="slide">
+                                <p>Mini project - "Fuzzy & PSO controller design for MPPT in PV system" in MatLab</p>
+                        </li>
+                        <li class="slide">
+                                <p>Final project - Solar MPPT charge controller</p>
+                        </li>
+                    </ul>
+                </div>
+                <script>
+                    $(document).ready(function(){
+                        $('#slider>li:gt(0)').hide();
+                        setInterval(function(){
+                            $('#slider > li:first')
+                                .fadeOut(1000)
+                                .next()
+                                .fadeIn(1000)
+                                .end()
+                                .appendTo('#slider');
+                        },5000);
+                    });
+                </script>
+            </section>
+
+            <!--        Education       -->
+            
+            <!--        Contact     -->
+            <section class="contact" id="contact">
+                <h1>Contact</h1>
+                    <div id="form">
+                        <form method="POST" action="mail.php">
+                            <input type="text" name="name" value="" id="name" placeholder="Name" required>
+
+                            <input type="email" name="email" value="" id="email" placeholder="E-mail" required>
+
+                            <textarea name="message" id="message" value="your message for me" placeholder="Your Message for me " required></textarea>
+
+                            <input type="submit" name="submit" value="Send >>>">
+                        </form>
+                    </div>
+                    <div class="phone">
+                        <p>Call me:<br><a href="tel:+919080522990"><i class='bx bxs-phone-call'></i></a></p>
+                    </div>
+            </section>
+
+            <!--        Contact     -->
+            <div class="sea">
+                <img id="seaimg" src="images/sea.png">
+                <script>
+                    $(document).ready(function(){
+                        $("#darkmode").click(function(){
+                            $('#seaimg').css("filter","brightness(20%)")
+                        })
+                        $("#lightmode").click(function(){
+                            $('#seaimg').css("filter","brightness(100%)")
+                        })
+                    });
+                </script>
+                <div class="ship" id="ship">
+                    <img src="images/ship.gif">
+                </div>
+            </div>
+
+            <!--        Homepage        -->
+        </section>
+                <!--        Navigation      -->
+
+                <section class="navigation" id="nav">
+
+                    <!--        Modes       -->
+        
+                    <div class="modes" id="mode">
+                        <span class="dark" id="darkmode" onclick="dark()"><i class='bx bxs-moon'></i></span>
+                        <span class="light" id="lightmode" onclick="light()"><i class='bx bxs-sun'></i></span>
+                    </div>
+                    <script>
+                        var mode = document.getElementById("mode");
+                        var navigation = document.getElementById("nav");
+                        var darkmode = document.getElementById("darkmode");
+                        var lightmode = document.getElementById("lightmode");
+        
+                        function dark(){
+                            document.body.style.backgroundColor = "black";
+                            document.body.style.color = "silver";
+                            darkmode.style.display = "none";
+                            lightmode.style.display = "block";
+                            mode.style.backgroundColor = "silver";
+                            mode.style.boxShadow = "0 0 100px whitesmoke";
+                            navigation.style.backgroundColor = "black";
+                        }
+                        function light(){
+                            document.body.style.backgroundColor = "whitesmoke";
+                            document.body.style.color = "#262626";
+                            lightmode.style.display = "none";
+                            darkmode.style.display = "block";
+                            mode.style.backgroundColor = "#262626"
+                            mode.style.boxShadow = "0 0 100px #262626"
+                            navigation.style.backgroundColor = "whitesmoke"
+                        }
+                    </script>
+        
+                    <!--        Modes       -->
+        
+                    <!--        Navbar     -->
+        
+                    <nav>
+                        <ul id="text">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#education" id="nav1">Education</a></li>
+                            <li><a href="#contact" id="nav2">Contact</a></li>
+                        </ul>
+                        <ul id="icon">
+                            <li><a href="#scrollpage"><i class="bx bxs-home"></i></a></li>
+                            <li><a href="#education" id="nav1"><i class="bx bxs-user"></i></a></li>
+                            <li><a href="#contact" id="nav2"><i class="bx bxs-phone"></i></a></li>
+                        </ul>
+                    </nav>
+        
+                    <!--        Navbar     -->
+                </section>
+        
+                <!--        Navigation      -->
+    </body>
+</html>

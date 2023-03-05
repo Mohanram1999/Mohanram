@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Alegreya+SC&family=Allerta+Stencil&family=Dongle:wght@700&family=Moo+Lah+Lah&family=Nosifer&display=swap');
+
+body{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: whitesmoke;
+    color: #262626;
+    transition: 2s;
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+
+/*      Scrollbar       */
+
+::-webkit-scrollbar{
+    height: 10px;
+    width: 10px;
+    color: goldenrod;
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: goldenrod;
+}
+
+/*      Scrollbar       */
+
+/*      Navigation      */
+
+.navigation{
+    top: 0;
+    left: 0;
+    right: 0;
+    width:100%;
+    height: 2cm;
+    position: fixed;
+    text-align: center;
+    background-color: whitesmoke;
+    transition: 2s;
+}
+
+/*      Modes       */
+
+.modes{
+    padding:35px;
+    background-color: #262626;
+    border-bottom-left-radius: 100%;
+    float: right;
+    font-size: 35px;
+    cursor: pointer;
+    box-shadow: 0 0 100px #262626;
+}
+.modes .dark{
+    color: silver;
+}
+.modes .dark:hover{
+    text-shadow: 0 0 5px silver;
+}
+.modes .light{
+    display: none;
+    color:darkorange;
+}
+.modes .light:hover{
+    text-shadow: 0 0 5px orangered;
+}
+
+
+/*      Modes       */
+
+/*      Navbar      */
+nav #text{
+    display: block;
+}
+nav #text li{
+    display: inline;
+    list-style: none;
+}
+nav #text li a{
+    color: seagreen;
+    text-decoration: none;
+    padding-left: 2cm;
+    font-weight: bold;
+    font-family: cursive;
+}
+nav ul li #nav1{
+    color: unset;
+}
+nav ul li #nav2{
+    color: unset;
+}
+nav #text li a:hover{
+    font-size:larger;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+nav #icon{
+    display: none;
+}
+nav #icon li{
+    display: inline;
+    list-style: none;
+}
+nav #icon li a{
+    color: seagreen;
+    text-decoration: none;
+    padding: 0 15px;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: large;
+}
+nav ul li #nav1{
+    color: unset;
+}
+nav ul li #nav2{
+    color: unset;
+}
+nav #icon li a:hover{
+    font-size: x-large;
+    text-shadow: 0 0 5px;
+}
+
+@media screen and (max-width:600px) {
+    .modes{
+        font-size: 30px;
+    }
+    nav #text{
+        display: none;
+    }
+    nav #icon{
+        display: block;
+        position: sticky;
+    }
+}
+
+/*      Navbar      */
+
+/*      Navigation      */
+
+/*      Homepage        */
+
+.homepagecon{
+    position:absolute;
+    width:99%;
+    height: 100vh;
+    padding-top: 0;
+    margin-top: 2cm;
+}
+.homepagecon h1{
+    margin-top: 3cm;
+    padding-top:0 ;
+    text-align: center;
+    font-size: large;
+    font-family:"Allerta Stencil";
+}
+.homepagecon h1 span{
+    font-variant: small-caps;
+    font-size: 115px;
+    font-family: 'Moo Lah Lah',cursive;
+    transform: translate(-50%,-50%);
+    background: #262626 -webkit-gradient(linear,left top,right top,from(#262626),to(#262626),color-stop(0.5,#fff)) 0 0 no-repeat;
+    -webkit-background-size:90px;
+    background-size: 90px;
+    color: rgba(180, 157, 26, 0.801);
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: animate 5s infinite;
+}
+@keyframes animate {
+    0%,10%{
+        background-position: 1000px;
+    }
+    20%{
+        background-position: top left;
+    }
+    90%{
+        background-position: top right;
+    }
+    100%{
+        background-position: -1000px;
+    }
+}
+.homepagecon h2{
+    text-align: center;
+    font-size: xx-large;
+    font-family: "Dongle";
+}
+.homepagecon h3{
+    text-align: center;
+}
+@media screen and (max-width:600px) {
+    .homepagecon{
+        float: none;
+        height: 50vh;
+        width: 100%;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .homepagecon h1{
+        font-size:medium;
+        padding-top: 3cm;
+    }
+    .homepagecon h1 span{
+        font-size: 50px;
+    }
+    .homepagecon h2{
+        font-size:x-large;
+    }
+}
+
+/*      sea and ship     */
+.sea{
+    display: block;
+    position: fixed;
+    margin-top: 70vh;
+    width: 99%;
+}
+.sea #seaimg{
+    position: absolute;
+    width: 100%;
+    height: 5cm;
+    border-radius: 10px;
+    transition: 1s;
+    filter: brightness(100%);
+}
+.ship{
+    margin-left: 5%;
+    mix-blend-mode:hard-light;
+    transform-style: preserve-3d;
+}
+.ship img{
+    width: 5cm;
+    height: 5cm;
+}
+.ship:hover{
+    mix-blend-mode: difference;
+}
+/*      sea and ship     */
+
+/*      Homepage        */
+
+
+/*      Education       */
+
+.education{
+    position: absolute;
+    width: 99%;
+    height: 90vh;
+    margin-top: 100vh;
+    text-align: center;
+    align-items: center;
+    border-top: none;
+    background-image: url("images/island2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x:right;
+    background-position-y: 20px;
+}
+.education h1{
+    text-align: center;
+    font-family: "Alegreya SC";
+    font-variant: small-caps;
+    font-size: x-large;
+}
+.degree{
+    margin-left: 10px;
+    text-align: center;
+    width: 50%;
+    padding-top: 2cm;
+}
+.degree h1{
+    font-size: large;
+    font-family: "Akaya kanadaka";
+    font-variant: small-caps;
+}
+.skills{
+    width: 50%;
+    text-align: center;
+}
+.skills ul li{
+    list-style: none;
+    display: inline-flex;
+}
+.circle{
+    margin: 10px;
+    position: relative;
+    width: 3cm;
+    height:3cm;
+    border-bottom: 5px solid;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    cursor: pointer;
+}
+.circle p{
+    font-size: 10px;
+    font-weight: bolder;
+    font-variant: small-caps;
+    font-family:cursive;
+}
+.wave{
+    font-family: cursive;
+    background-color: #3f68c5;
+    position: absolute;
+    top: 40%;
+    height: 200%;
+    width: 200%;
+    left: -50%;
+    border-radius: 38%;
+    transform: rotate(360deg);
+    transition: all 5s ease;
+    animation: wave 50s linear infinite;
+}
+.wave1{
+    font-family: cursive;
+    background-color: #3f68c5;
+    position: absolute;
+    top: 25%;
+    height: 200%;
+    width: 200%;
+    left: -50%;
+    border-radius: 38%;
+    transform: rotate(360deg);
+    transition: all 5s ease;
+    animation: wave 50s linear infinite;
+}
+.wave2{
+    font-family: cursive;
+    background-color: #3f68c5;
+    position: absolute;
+    top: 50%;
+    height: 200%;
+    width: 200%;
+    left: -50%;
+    border-radius: 38%;
+    transform: rotate(360deg);
+    transition: all 5s ease;
+    animation: wave 50s linear infinite;
+}
+.wave3{
+    font-family: cursive;
+    background-color: #3f68c5;
+    position: absolute;
+    top: 60%;
+    height: 200%;
+    width: 200%;
+    left: -50%;
+    border-radius: 38%;
+    transform: rotate(360deg);
+    transition: all 5s ease;
+    animation: wave 50s linear infinite;
+}
+@keyframes wave {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(3600deg);}
+}
+.circle:hover .wave{
+    top: 0%;
+}
+.circle:hover .wave1{
+    top: 0%;
+}
+.circle:hover .wave2{
+    top: 0%;
+}
+.circle:hover .wave3{
+    top: 0%;
+}
+.project{
+    width:50%;
+    height: 2cm;
+}
+.project h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+    text-align: center;
+    font-variant: small-caps;
+}
+#slider{
+    position: relative;
+}
+.slide{
+    list-style: none;
+    text-align: center;
+    width: 90%;
+    border:2px;
+    border-style: solid;
+    border-radius: 20px;
+}
+#slider>li{
+    font-family: "Alegreya SC";
+    position: absolute;
+    text-shadow: 0 1px 2px;
+}
+@media screen and (max-width:600px) {
+    .education{
+        width: 100%;
+        height: 140vh;
+        margin-left: 0;
+        background-image: url("images/island2.png");
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        border-right: none;
+        border-left: none;
+    }
+    .degree{
+        width: 90%;
+        padding-top: 0.5cm;
+    }
+    .skills{
+        width: 90%;
+    }
+    .skills ul li{
+        display:inline;
+    }
+    .circle{
+        float: left;
+        width: 2.3cm;
+        height: 2.3cm;
+    }
+    .project{
+        position: absolute;
+        margin-top: 45vh;
+        width: 90%;
+        text-align: center;;
+    }
+    .slide{
+        width: 80%;
+    }
+}
+/*      Education       */
+
+/*      Contact     */
+
+.contact{
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    margin-top:230vh ;
+    text-align: center;
+    align-items: center;
+    border-top: none;
+    background-image: url("images/island4.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x:right;
+}
+.contact h1{
+    padding-bottom: 2cm;
+    text-align: center;
+    font-family: "Alegreya SC";
+    font-variant: small-caps;
+    font-size: x-large;
+}
+#form{
+    float: left;
+    width: 50%;
+    margin-left: 1cm;
+    height: 40vh;
+}
+input[type=text],textarea,[type=email]{
+    margin: 10px;
+    background-color: unset;
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid;
+    border-color:green;
+    color: green;
+    font-weight: bold;
+}
+input[type=text]::placeholder,textarea::placeholder,[type=email]::placeholder{
+    font-family: "Akaya kanadaka";
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: medium;
+}
+input[type=submit]{
+    float: right;
+    background-color: unset;
+    color: green;
+    border:none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-variant: small-caps;
+    font-weight: bolder;
+    font-family: "Nosifer";
+}
+input[type=submit]:hover{
+    color: blue;
+}
+.phone{
+    float: right;
+    width: 45%;
+    text-align: left;
+}
+.phone p{
+    margin: 50px 20px;
+    font-variant: small-caps;
+    font-size: large;
+    font-weight: bolder;
+    font-family: "Akaya kanadaka";
+}
+.phone p br{
+    display: block;
+}
+.phone p a{
+    font-size: xx-large;
+    margin:20px;
+    color: green;
+}
+.phone p a:hover{
+    color: blue;
+}
+@media screen and (max-width:600px) {
+    .contact{
+        margin-left: 0;
+        margin-top: 250vh;
+        width: 100%;
+        height: 120vh;
+        background-image: url("images/island4.png");
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        border-right: none;
+    }
+    .contact h1{
+        padding-bottom: 1cm;
+    }
+    #form{
+        width: 60%;
+        float: none;
+    }
+    .phone{
+        float: none;
+        width: 95%;
+    }
+    .phone p{
+        margin: 0;
+        text-align: center;
+    }
+    .phone p br{
+        display: none;
+    }
+    .phone p a{
+        margin: 0;
+    }
+}
+    /*      Contact     */
